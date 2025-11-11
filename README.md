@@ -13,7 +13,7 @@ to review the changes that have been done to the files (and has not been committ
 git diff
 ```
 
-If you are working in the **VSCode(()), click the Git icon on the side bar and then click the name of the modified file
+If you are working in the **VSCode**, click the Git icon on the side bar and then click the name of the modified file
 you would like to review:
 
 - The left side is the file as it exists in the last commit (or the Staging Area for unstaged changes).

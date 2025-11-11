@@ -1,7 +1,7 @@
-# Practice
-RCS Repository to practice Git tools
+# GitPractice
+RCS Repository to practice Git commands and tools
 
-### Setup terminal and OnDemand Environment
+### Setup SCC Environment
 ```{bash}
 module load python3
 ```

@@ -6,6 +6,55 @@ RCS Repository to practice Git commands and tools
 module load python3
 ```
 
+### The Standard Pull Request Workflow
+A Pull Request is not a Git feature; it's a feature of *GitHub* (or other hosting services like GitLab/Bitbucket) that asks for a review and merge of one remote branch (your temporary branch) into another remote branch (usually main).
+
+**1. Create and Work on a Local Branch**
+Before starting any changes, create a new local branch off your intended target branch (e.g., main).
+
+```
+# 1. Ensure you're on the latest code
+git checkout main
+git pull origin main
+
+# 2. Create your temporary/feature branch
+git checkout -b feature/my-new-feature
+```
+
+**2. Commit and Push the Branch**
+As you make changes, commit them locally. When you're ready to propose them for review, you must push the branch to your GitHub remote. This is what makes the branch visible to GitHub and allows a PR to be created.
+
+```
+# Commit your changes
+git add .
+git commit -m "feat: finished the new feature logic"
+
+# Push the local branch to the remote repository for the first time
+git push -u origin feature/my-new-feature
+```
+
+**3. Create the Pull Request**
+
+Once the branch is pushed, you have two primary ways to initiate the Pull Request on GitHub:
+
+**Option A**: Using the Terminal Link (Fastest) The output from the git push command will almost always include a direct URL to create the pull request. You can copy this link and paste it into your browser.
+
+```
+...
+* [new branch] feature/my-new-feature -> feature/my-new-feature
+...
+```
+
+remote: Create a pull request for 'feature/my-new-feature' on GitHub by visiting:
+remote:   https://github.com/YourOrg/YourRepo/pull/new/feature/my-new-feature
+
+**Option B**: Using the GitHub UI Navigate to your repository's page on GitHub. A yellow banner will usually appear automatically, detecting the new branch you just pushed and offering a "Compare & pull request" button.
+
+**4. Continuous Updates**
+If you receive feedback and need to make more commits, you just continue to commit and push to the same branch.
+The existing Pull Request will automatically update with the new commits and changes.
+
+
 ### Uncommitted changes
 
 to review the changes that have been done to the files (and has not been committed yet) with the last commit:

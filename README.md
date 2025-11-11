@@ -112,6 +112,16 @@ Example closing keyword: **Closes #42** or **Fixes #42**.
 
 *Submit PR*: Set the base branch (e.g., main) and the head branch (your temporary branch), add a descriptive title, assign reviewers, and click Create pull request (or Create Draft pull request if it's not ready).
 
+**5. Cleanup** : 
+
+After the PR is merged, GitHub automatically closes the linked Issue (#42) and offers a button to delete the temporary branch, which you should do to keep the repository clean.
+
+You can delete the local branch after the merge with:
+
+```{bash}
+git branch -d fix/42-negative-log
+```
+
 *******
 
 ### Uncommitted changes

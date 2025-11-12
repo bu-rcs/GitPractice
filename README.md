@@ -130,6 +130,64 @@ git branch -d fix/42-negative-log
 
 *******
 
+### Reviewing and Testing Pull Requests
+
+**1. Prepare Your Local Environment**
+
+Before fetching the PR code, make sure your local repository is clean.
+
+Switch to Main/Master Branch: Move to the branch the PR is targeting (usually main).
+
+```{bash}
+git checkout main
+
+# Update Base Branch
+git pull origin main
+```
+
+**2. Fetch the PR Code**
+
+You have two main methods to get the PR's code onto your local machine:
+
+*A. Fetching the PR Branch*
+
+```{bash}
+git fetch origin <pr-branch-name>
+
+#Create and Checkout a Local Branch
+git checkout -b review/<pr-branch-name> origin/<pr-branch-name>
+```
+*B. Using the GitHub PR Fetch Command (If you know the PR Number)*
+
+Here is an example for the PR #42
+```{bash}
+git fetch origin pull/42/head:pr/42
+git checkout pr/42
+```
+**3. Review and test the PR Code**
+
+Once you are on the PR's branch, you can perform your verification.
+If you find issues, switch back to the GitHub web UI and leave line-specific comments on the PR's "Files changed" tab.
+
+If you are closing the PR and this PR is related to an Issue, in the PR description, use a closing keyword and the Issue number to automatically close the Issue when the PR is merged.
+
+Example closing keyword: **Closes #42** or **Fixes #42**.
+
+**4. Local Cleanup**
+
+After the review, switch back to your main branch and delete the temporary review branch.
+
+```{bash}
+git checkout main
+
+git branch -D <review-branch-name>
+# or
+git branch -D pr/42
+```
+
+
+*******
+
 ### Uncommitted changes
 
 to review the changes that have been done to the files (and has not been committed yet) with the last commit:

@@ -220,6 +220,56 @@ git config --global difftool.prompt false
 *******
 
 
+### Discarding Changes in the Working Directory (Unstaged)
+
+**To discard changes in a single file:**
+
+```{bash}
+git checkout -- <file-name>
+# OR (modern syntax)
+git restore <file-name>
+```
+**To discard changes in ALL unstaged files:**
+
+```{bash}
+git checkout -- .
+# OR (modern syntax)
+git restore
+```
+
+### Discarding Changes in the Staging Area (Staged)
+
+If you have run git add but have not committed yet, the changes are in the staging area. You need to "unstage" them first.
+
+**To unstage changes in a single file**:
+
+```{bash}
+git reset HEAD <file-name>
+# OR (modern syntax)
+git restore --staged <file-name>
+```
+
+**To unstage changes in ALL staged files**:
+
+```{bash}
+git reset HEAD .
+# OR (modern syntax)
+git restore --staged .
+```
+
+This moves the files back to the working directory, where they are now considered unstaged changes. If you want to completely discard them from there, you must then follow the steps in the previous section.
+
+### Discarding Both Staged and Unstaged Changes
+
+The fastest way to completely wipe out all modifications (both staged and unstaged) and return your repository to the state of the last commit is using a hard reset. **Use this command with extreme caution, as it is destructive**.
+
+```{bash}
+git reset --hard HEAD
+```
+
+
+*******
+
 ### Updating the last commit message or adding forgotten files
 
 ```{bash}

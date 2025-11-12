@@ -1,6 +1,6 @@
 # GitPractice
 RCS Repository to practice Git commands and tools
-*Author*: **Katia Bulekova**
+*Author*: **Katia Bulekova, RCS**
 
 
 ## Table of Contents
@@ -371,6 +371,3 @@ Documentation: [https://docs.github.com/en/codespaces/quickstart]
 
 Codespace has the GitHub  Copilot built in.
 The default editor is VSCode, but you can chose JupyterLab. If you work on a codespace in VS Code, you can use Live Share to work collaboratively with other people on your team. By default, inactive codespaces are deleted after 30 days.
-
-
-Line1

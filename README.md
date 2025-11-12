@@ -43,7 +43,7 @@ git push -u origin feature/my-new-feature
 
 Once the branch is pushed, you have two primary ways to initiate the Pull Request on GitHub:
 
-**Option A**: Using the Terminal Link (Fastest) The output from the git push command will almost always include a direct URL to create the pull request. You can copy this link and paste it into your browser.
+**Option A**: Using the Terminal Link. The output from the git push command will almost always include a direct URL to create the pull request. You can copy this link and paste it into your browser.
 
 ```
 ...

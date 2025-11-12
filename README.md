@@ -1,5 +1,21 @@
 # GitPractice
 RCS Repository to practice Git commands and tools
+*Author*: **Katia Bulekova**
+
+
+## Table of Contents
+* [Setup SCC Environment](#setup-scc-environment)
+* [The Standard Pull Request Workflow](#the-standard-pull-request-workflow)
+* [Working on GitHub Issue](#working-on-github-issue)
+* [Reviewing and Testing Pull Requests](#reviewing-and-testing-pull-requests)
+* [Uncommitted changes](#uncommitted-changes)
+* [Discarding Unstaged Changes in the Working Directory](#discarding-unstaged-changes-in- the-working-directory)
+* [Discarding Staged Changes in the Staging Area](#discarding-staged-changes-in-the-staging-area)
+* [Discarding Both Staged and Unstaged Changes](discarding-both-staged-and-unstaged-changes)
+* [Updating the last commit message or adding forgotten files](updating-the-last-commit-message-or-adding-forgotten-files)
+* [Squashing small commits](squashing-small-commits)
+* [Running code in the Codespace](running-code-in-the-codespace)
+
 
 ### Setup SCC Environment
 ```{bash}
@@ -220,7 +236,7 @@ git config --global difftool.prompt false
 *******
 
 
-### Discarding Changes in the Working Directory (Unstaged)
+### Discarding Unstaged Changes in the Working Directory
 
 **To discard changes in a single file:**
 
@@ -237,7 +253,7 @@ git checkout -- .
 git restore
 ```
 
-### Discarding Changes in the Staging Area (Staged)
+### Discarding Staged Changes in the Staging Area
 
 If you have run git add but have not committed yet, the changes are in the staging area. You need to "unstage" them first.
 

@@ -11,10 +11,10 @@ RCS Repository to practice Git commands and tools
 * [Uncommitted changes](#uncommitted-changes)
 * [Discarding Unstaged Changes in the Working Directory](#discarding-unstaged-changes-in-the-working-directory)
 * [Discarding Staged Changes in the Staging Area](#discarding-staged-changes-in-the-staging-area)
-* [Discarding Both Staged and Unstaged Changes](discarding-both-staged-and-unstaged-changes)
-* [Updating the last commit message or adding forgotten files](updating-the-last-commit-message-or-adding-forgotten-files)
-* [Squashing small commits](squashing-small-commits)
-* [Running code in the Codespace](running-code-in-the-codespace)
+* [Discarding Both Staged and Unstaged Changes](#discarding-both-staged-and-unstaged-changes)
+* [Updating the last commit message or adding forgotten files](#updating-the-last-commit-message-or-adding-forgotten-files)
+* [Squashing small commits](#squashing-small-commits)
+* [Running code in the Codespace](#running-code-in-the-codespace)
 
 
 ### Setup SCC Environment

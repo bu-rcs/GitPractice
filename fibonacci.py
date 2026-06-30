@@ -1,3 +1,4 @@
+# A function that computes Fibonacci numbers using an iterative approach.
 def fibonacci(n):
     """
     Compute the nth Fibonacci number.

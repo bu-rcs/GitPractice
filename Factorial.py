@@ -1,4 +1,4 @@
-# Write a Python script that computes factorial
+# A Python script that computes factorial
 # of a given number using recursion.
 def factorial(n):
     if n < 0:
